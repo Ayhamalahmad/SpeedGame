@@ -111,6 +111,8 @@ body {
     padding: 15px;
     margin: 15px 0;
     display: none;
+    max-height: 154px;
+    overflow-y: auto;
 }
 
 .upcoming-word div{
