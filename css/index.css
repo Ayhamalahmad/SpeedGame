@@ -1,0 +1,223 @@
+:root {
+    --minColor: #2196f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.game {
+    background-color: #eee;
+    min-height: 100vh;
+}
+
+.container {
+    margin: auto;
+    max-width: 900px;
+}
+@media (max-width:767px) {
+    .container{
+        width: 100%;
+        padding: 0 10px;
+        
+    }
+}
+.game .name {
+    background-color: var(--minColor);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.message {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 15px 0;
+    border-radius: 6px;
+    line-height: 1.8;
+}
+
+.message span {
+    font-weight: bold;
+    color: #009688;
+}
+
+.message span::before {
+    content: "[ ";
+}
+
+.message span::after {
+    content: " ]";
+}
+
+.start {
+    font-size: 20px;
+    text-align: center;
+    background-color: #009688;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.start:hover {
+    background-color: #344B47;
+}
+
+.the-word {
+    text-align: center;
+    font-size: 60px;
+    color: var(--minColor);
+    font-weight: bold;
+    user-select: none;
+}
+@media (max-width: 600) {
+    .the-word{
+        font-size: 40px;
+    }
+}
+.wordinput {
+    margin: 15px 0;
+    width: 100%;
+    padding: 15px;
+    border: 3px solid var(--minColor);
+    caret-color: var(--minColor);
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.wordinput:focus {
+    outline: none;
+}
+
+.upcoming-word {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    display: none;
+}
+
+.upcoming-word div{
+    background-color: var(--minColor);
+    color: white;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.control{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 6px;
+}
+.control span{
+    font-weight: bold;
+    color: #009688;
+}
+.finish{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    background-color: #DFCFC0;
+    margin-top: 12px;
+    display: none;
+}
+.finish .good{
+    color: var(--minColor);
+}
+.finish .bad{
+    color: red;
+
+}
+.lastgame{
+    background-color: white;
+    padding: 15px;
+}
+.lastgame span{
+    font-weight: bold;
+    color: #009688;
+}
+.levelsbox{
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    margin-top: 10px;
+
+}
+
+.levelsbox select{
+    border: 1px solid #ddd;
+    padding: 6px 15px;
+    margin-left: 17px;
+    background-color: #eee;
+    color: var(--minColor);
+    font-weight: bold;
+    border-radius: 6px;
+    width: 144px;
+    text-align: center;
+    cursor: pointer;
+}
+.levelsbox select:focus{
+    outline: none;
+}
+.levelsbox select option{
+cursor: pointer;
+}
+.textbeforestarting{
+    display: none;
+    background-color: var(--minColor);
+    padding: 15px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-transform: capitalize;
+}
+.beforestarting{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 29px;
+}
+.beforestarting::before {
+    content: "[ ";
+}
+
+.beforestarting::after {
+    content: " ]";
+}
+
+.tryagain{
+    background-color: var(--minColor);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    width: fit-content;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+}

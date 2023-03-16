@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="imges/keyboard-solid1.svg"
+      type="image/x-icon"
+    />
+    <title>Type Speed Game</title>
+  </head>
+  <body>
+    <div class="game">
+      <div class="name"></div>
+      <!-- Typing Speed Test Game -->
+      <div class="levelsbox">
+        <label for="levelbox">Select a Laval </label>
+        <select name="" id="levelbox" class="levelbox">
+          <option value="Normal">Normal</option>
+          <option value="Hard">Hard</option>
+          <option value="Easy">Easy</option>
+        </select>
+      </div>
+      <div class="container">
+        <div class="message">
+          You are playing on
+          <span class="lvl"></span> Level & You Have
+          <span class="seconds"></span> Seconds To Type The Word
+        </div>
+        <div class="textbeforestarting">
+          Start after
+          <div class="beforestarting">5</div>
+        </div>
+        <div class="start">Start Playing</div>
+        <div class="the-word"></div>
+        <input type="text" class="wordinput" />
+        <div class="upcoming-word"></div>
+        <div class="control">
+          <div class="time">Time Left: <span></span> seconds</div>
+          <div class="score">
+            score: <span class="goal">0</span> From <span class="total"></span>
+          </div>
+        </div>
+        <div class="finish"></div>
+        <div class="info">
+          <div class="lastgame">
+            On
+            <span class="lastscoredate"></span>
+            , Your Recorded Game Score Was .
+            <span class="lastgamescore"></span>
+          </div>
+        </div>
+        <div class="tryagain">Try Again</div>
+      </div>
+    </div>
+    <script src="javascript/index.js"></script>
+  </body>
+</html>
