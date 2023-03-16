@@ -10,10 +10,11 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+
 }
 
 .game {
-    background-color: #eee;
     min-height: 100vh;
 }
 
@@ -21,13 +22,15 @@ body {
     margin: auto;
     max-width: 900px;
 }
+
 @media (max-width:767px) {
-    .container{
+    .container {
         width: 100%;
         padding: 0 10px;
-        
+
     }
 }
+
 .game .name {
     background-color: var(--minColor);
     color: white;
@@ -81,11 +84,13 @@ body {
     font-weight: bold;
     user-select: none;
 }
+
 @media (max-width: 600) {
-    .the-word{
+    .the-word {
         font-size: 40px;
     }
 }
+
 .wordinput {
     margin: 15px 0;
     width: 100%;
@@ -111,11 +116,15 @@ body {
     padding: 15px;
     margin: 15px 0;
     display: none;
-    max-height: 154px;
-    overflow-y: auto;
+}
+@media (max-width:767px) {
+    .upcoming-word{
+        max-height: 154px;
+        overflow-y: auto;
+    }
 }
 
-.upcoming-word div{
+.upcoming-word div {
     background-color: var(--minColor);
     color: white;
     margin: 4px;
@@ -123,18 +132,21 @@ body {
     border-radius: 6px;
     font-weight: bold;
 }
-.control{
+
+.control {
     background-color: white;
     display: flex;
     justify-content: space-between;
     padding: 15px;
     border-radius: 6px;
 }
-.control span{
+
+.control span {
     font-weight: bold;
     color: #009688;
 }
-.finish{
+
+.finish {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -143,22 +155,27 @@ body {
     margin-top: 12px;
     display: none;
 }
-.finish .good{
+
+.finish .good {
     color: var(--minColor);
 }
-.finish .bad{
+
+.finish .bad {
     color: red;
 
 }
-.lastgame{
+
+.lastgame {
     background-color: white;
     padding: 15px;
 }
-.lastgame span{
+
+.lastgame span {
     font-weight: bold;
     color: #009688;
 }
-.levelsbox{
+
+.levelsbox {
     text-align: center;
     background-color: white;
     padding: 15px;
@@ -166,7 +183,7 @@ body {
 
 }
 
-.levelsbox select{
+.levelsbox select {
     border: 1px solid #ddd;
     padding: 6px 15px;
     margin-left: 17px;
@@ -178,13 +195,16 @@ body {
     text-align: center;
     cursor: pointer;
 }
-.levelsbox select:focus{
+
+.levelsbox select:focus {
     outline: none;
 }
-.levelsbox select option{
-cursor: pointer;
+
+.levelsbox select option {
+    cursor: pointer;
 }
-.textbeforestarting{
+
+.textbeforestarting {
     display: none;
     background-color: var(--minColor);
     padding: 15px;
@@ -196,11 +216,13 @@ cursor: pointer;
     justify-content: center;
     text-transform: capitalize;
 }
-.beforestarting{
+
+.beforestarting {
     font-size: 40px;
     font-weight: bold;
     margin-left: 29px;
 }
+
 .beforestarting::before {
     content: "[ ";
 }
@@ -209,7 +231,7 @@ cursor: pointer;
     content: " ]";
 }
 
-.tryagain{
+.tryagain {
     background-color: var(--minColor);
     color: white;
     padding: 15px 20px;
@@ -222,5 +244,5 @@ cursor: pointer;
     display: none;
     font-size: 16px;
     font-weight: bold;
-     margin-bottom: 30px;
+    margin-bottom: 30px;
 }
